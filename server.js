@@ -812,39 +812,4 @@ app.get('/business-request.html', (req, res) => {
           const referrerCode = document.getElementById('referrerCode').value;
 
           const res = await fetch('/api/business-request', {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({
-              businessName,
-              businessPhone,
-              businessAddress,
-              packageType,
-              referrerCode: referrerCode || null
-            })
-          });
-
-          const data = await res.json();
-          const msg = document.getElementById('message');
-          
-          if (data.success) {
-            msg.className = 'msg success';
-            msg.innerHTML = \`
-              ✅ درخواست ثبت شد!<br>
-              شماره پیگیری: \${data.refId}<br>
-              مبلغ: \${data.amount.toLocaleString('fa-IR')} تومان<br>
-              کمیشن: \${data.commission.toLocaleString('fa-IR')} تومان
-            \`;
-            setTimeout(() => document.getElementById('businessForm').reset(), 2000);
-          }
-        });
-      </script>
-    </body>
-    </html>
-  `);
-});
-
-// Start Server
-const PORT = process.env.PORT || 8080;
-app.listen(PORT, () => {
-  console.log(\`✅ سایت فعال: http://localhost:\${PORT}\`);
-});
+            
