@@ -198,7 +198,7 @@ app.get('/api/directory', async (req, res) => {
 app.get('/', (req, res) => {
   res.send(`<!DOCTYPE html>
 <html lang="fa" dir="rtl">
-<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">  <meta name="enamad" content="2890483" />  <title>2890483 تبلیغ یار</title>  <style>
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">  <meta name=enamad content=2890483 />  <title>2890483 تبلیغ یار</title>  <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
     body { font-family: Tahoma; background: #0052cc; color: #333; }
     .container { max-width: 1200px; margin: 0 auto; padding: 20px; }
