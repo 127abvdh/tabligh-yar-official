@@ -201,6 +201,7 @@ app.get('/', (req, res) => {
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="enamad" content="2890483" />
   <title>2890483 تبلیغ یار</title>
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
